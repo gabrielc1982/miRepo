@@ -1,0 +1,607 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+@font-face {
+    font-family: opensans;
+    src: url(../assets/fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+}
+#home {
+    background-color: rgb(50, 192, 197);
+}
+.titulo1{
+    font-family: opensans;
+    text-align: center; 
+    font-size: 40px; width: 1500px ;height: 50px ;
+    background-color: aquamarine; color: black;
+}
+
+h2 {
+    color: aliceblue;
+}
+h3 {
+    color: aliceblue;
+}
+#titulo1 {
+    text-align: center; font-size: 40px;
+}
+#location1 {
+    background-color: rgb(235, 150, 90);
+}
+#titulo3 {
+    text-align: center;
+}
+#location1 p {
+    font-size: larger;
+}*/
+
+/*pagina clases*/
+
+/*COMIENZO HOME*/
+
+.body-home{
+    background-color: grey;
+}
+.container-home{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 50px 1fr 1fr;
+    grid-template-areas:
+        "header-h"
+        "navegacion-h"
+        "section1-h"
+        "section2-h"
+        "aside-h"
+        "footer-h"
+}
+
+.header-home img{
+    width: 100px;
+    height: 100px;
+    display: grid;
+}
+
+.header-home{
+    display: grid;
+    grid-area: header-h;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: orangered;
+    text-transform: uppercase;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+}
+.titulo-home{
+    padding: 10px;
+    margin: 10px;
+    font-size: 40px;
+    font-family: cursive;
+}
+
+.h{
+    text-decoration: none;
+    background-color: orangered;
+    color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: grid;
+    justify-content: space-evenly;
+}
+
+.h:hover{
+    color: black;
+    background-color: blueviolet;
+}
+
+.nav-home{
+    grid-area: navegacion-h;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.sec-home-1{
+    grid-area: section1-h;
+    pad: 20px;
+    margin: 20px;
+}
+#carouselExample img{
+    height: 255px;
+}
+
+.sec-home-2{
+    margin: 20px;
+    padding: 20px;
+    grid-area: section2-h;
+    font-weight: 600;
+}
+
+.aside-home{
+    grid-area: aside-h;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.footer-home{
+    grid-area: footer-h;
+    padding: 20px;
+    margin: 20px;
+    display: grid;
+    text-transform: uppercase;
+    justify-items: center;
+}
+
+.top-h{
+    display: grid;
+    text-decoration: none;
+    border: 3px solid black;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    background-color: red;
+    color: white;
+}
+
+.top-h:hover{
+    background-color: black;
+    border: 3px  solid red;
+    color: white;
+}
+
+@media(min-width: 600px){
+    .coner-home{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "header-h header-h"
+        "navegacion-h navegacion-h"
+        "section1-h section2-h"
+        "aside-h aside-h"
+        "footer-h foter-h"
+    } 
+
+.header-home{
+    color: black;
+    border: 10px solid orangered;
+    padding: 30px;
+    margin: 30px;
+    justify-content: space-between;
+}
+.nav-home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sec-home-1{
+    width: 600px;
+}
+.aside-home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+}
+}
+
+/*FIN HOME*/
+
+/*comienzo clases*/
+
+.container-clases{
+    gap: 10px 10px;
+    height: 100vh;
+    width: 100%vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "header header"
+        "section aside"
+        "footer footer";
+}
+
+.header-clase {
+    width: 100%vh;
+    text-align: center; 
+    text-transform: uppercase;
+    background-image: url(../assets/pictures/fondometal.jpg);
+    grid-area: header;
+    display: flex;
+}
+
+.titulo1{
+    display: grid;
+    width: 50%;
+    border: 1px solid grey;
+    color: whitesmoke;
+    
+}
+
+.nave-clases{
+    display: grid;
+    width: 50%;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: space-around;
+}
+.nave-c{
+    width: 100%vh;
+    background-color: orange;
+    background-image: url(../assets/pictures/fondometal.jpg);
+    border: 4px solid white;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 20px;
+    color: wheat;
+    text-transform: uppercase;
+}
+
+.nave-c:hover{
+    background-image: none;
+    border: 4px solid orangered;
+    box-shadow: 0 0 40px orange;
+    color: black;
+
+}
+
+section {
+    grid-area: section;
+    display: grid;
+    
+}
+.cross{
+    border: 3px solid black;
+    height: 70px;
+    background-color: grey;
+    text-align: center;
+    padding: 15px; 
+}
+
+.cross-desc{
+    background-color: grey;
+    border: 5px solid black;
+    color: white;
+    padding: 10px;
+    height: 400px;
+    text-wrap: wrap;   
+}
+
+
+.juji{ 
+    border: 3px solid black;
+    height: 70px;
+    background-color: blue;
+    text-align: center;
+    padding: 15px;
+}
+
+.juji-desc{
+    background-color: blue;
+    border: 5px solid black;
+    color: white;
+    padding: 10px; 
+}
+
+.zumba{ 
+    border: 3px solid black;
+    height: 70px;
+    background-color: rgb(119, 43, 119);
+    text-align: center;
+    padding: 15px;
+}
+
+.zumba-desc{
+    background-color: rgb(118, 43, 119);
+    border: 5px solid black;
+    color: white;
+    padding: 10px;
+    height: 400px;  
+}
+
+.foto-text1{
+    display: flex;
+    margin: auto;
+    height: 400px;  
+}
+
+.foto-text2{
+    display: flex;
+    margin: auto;
+    height: 400px;  
+}
+
+.foto-text3{
+    display: flex;
+    margin: auto;
+    height: 400px;
+}
+
+.img-clas1{
+    width: 350px;
+    height: 400px;
+    border: 5px solid black;
+}
+
+
+
+aside {
+    grid-area: aside;
+    display: grid;   
+}
+
+.taekw{
+    border: 3px solid black;
+    height: 70px;
+    background-color: red;
+    text-align: center;
+    padding: 15px;
+}
+.taekw-desc{
+    background-color: red;
+    border: 5px solid black;
+    color: white;
+    padding: 10px;
+    
+}
+
+.aerob{
+    border: 3px solid black;
+    height: 70px;
+    background-color: rgb(248, 99, 124);
+    text-align: center;
+    padding: 15px;
+}
+.aerob-desc{
+    background-color: rgb(248, 99, 124);
+    border: 5px solid black;
+    color: white;
+    padding: 10px;
+    
+}
+.box{
+    border: 3px solid black;
+    height: 70px;
+    background-color: brown;
+    text-align: center;
+    padding: 15px;
+}
+.box-desc{
+    background-color: brown;
+    border: 5px solid black;
+    color: white;
+    padding: 10px;
+    
+}
+
+.img-clas2{
+    width: 400px;
+    height: 400px;
+    border: 8px solid black;
+}
+.foto-text4{
+    display: flex;
+    margin: auto;
+    height: 400px;
+    
+}
+.foto-text5{
+    display: flex;
+    margin: auto;
+    height: 400px;
+    
+}
+.foto-text6{
+    display: flex;
+    margin: auto;
+    height: 400px;
+    
+}
+
+
+
+footer{
+    grid-area: footer;
+    display: flex;
+}
+
+th, td, .table-clase, .t-horarios{
+    border: 5px solid black;
+    background-color: rgb(63, 61, 61);
+    color: white;
+    
+}
+.t-horarios{
+    text-align: center;
+}
+.vid-clase{
+    border: 3px solid rgb(139, 9, 9);
+    width: 350px;
+}
+
+@media(max-width: 700px){
+    .container-clases{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "header"
+        "section"
+        "aside"
+        "footer";
+    }
+    .header-clase{
+        flex-direction: column;
+        align-items: center;
+    }
+    .clase1{
+        width: 50%;
+    }
+    .footer-clase{
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+
+/* pagina dietas */
+.pagDietas{
+    background-color: rgb(180, 120, 120);
+    border: 5px solid rebeccapurple;  
+}
+
+.dietas-nav{
+    background-color: aqua;
+    border: 3px black;
+}
+
+.dietaColor {
+    background-color: darkgray;
+}
+
+.fotos1 img{
+    height: 300px; width:300px;
+    display: flex;
+    border-right: 3px;
+    
+}
+
+.f1{ 
+    background-color: chocolate;
+    border: 3px solid black; 
+    position: relative;
+    
+}
+
+.t1{
+    display: grid;
+    background-color: aliceblue;
+    width: 44%;
+    height: 60%;
+    border: 2px solid black;
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+}
+
+.f2{
+    background-color: blue;
+    border: 3px solid black;
+    position: relative;
+    
+}
+.t2{
+    width: 44%;
+    background-color: aliceblue;
+    border: 2px solid black;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.f3{
+    background-color: brown;
+    border: 3px solid black;
+    position: relative;   
+}
+.t3{
+    width: 43%;
+    background-color: aliceblue;
+    border: 2px solid black;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.f4{
+    background-color: grey;
+    border: 3px solid black; 
+    position: relative; 
+}
+.t4{
+    width: 44%;
+    background-color: aliceblue;
+    border: 2px solid black;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.f5{
+    background-color: crimson;
+    border: 3px solid black;
+    position: relative;
+    
+    
+}
+.t5{
+    width: 44%;
+    background-color: aliceblue;
+    border: 2px solid black;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.f6{
+    background-color: darkgreen;
+    border: 3px solid black;
+    position: relative;   
+}
+.t6{
+    width: 44%;
+    background-color: aliceblue;
+    border: 2px solid black;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.dieta-boton{
+    position: absolute;
+    top: 279px;
+    left:  2px;
+}
+
+footer{
+    text-transform: uppercase;
+    height: 90px;
+    background-color: grey;
+}
+
+.foot-p{
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.img-wapp{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 485px;
+    top: 20px;
+}*/
+/*fin pagina dietas*/
+
+
+
+/*pagina login*/
+login{
+    background-image: url(../assets/pictures/gympesas.jpg);
+    color: bisque;
+}
+.log-titulo{
+    background-color: grey;
+    color: rgb(246, 255, 255);
+}
+.log-link{
+    height: 20px;
+    background-color: grey;
+    color:rgb(225, 229, 233);    
+}
+.log-section{
+    background-color: aliceblue;
+}
