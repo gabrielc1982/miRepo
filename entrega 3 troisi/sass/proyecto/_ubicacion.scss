@@ -1,0 +1,108 @@
+.container-loc{
+        background-color: grey;
+        background-image: linear-gradient(rgba(80, 77, 80, 0.7), rgba(107, 97, 107, 0.7)), url(https://png.pngtree.com/thumb_back/fw800/background/20220425/pngtree-city-map-city-center-location-navigation-image_1079360.jpg);
+    }
+
+
+.container-loc{
+    padding: 10px;
+    height: 100%vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20%vh 20%vh 30%vh 30%vh;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "section"
+    "aside";
+}
+
+.header-loc{
+    margin: 10px;
+    background-color: lightgray;
+    height: 20%vh;
+    font-family: cursive;
+    border: 1px solid black;
+    border-radius: 35px;
+    grid-area: header;
+    display: grid;
+    justify-content: center;
+    color: orangered;
+    
+    
+}
+
+
+.section-loc{
+    margin-top: 10px;
+    padding: 10px;
+    height: 30%vh;
+    grid-area: section;
+    display: grid;  
+}
+
+.nav-loc{
+    .nav-link:hover{
+        color: red;
+        border-bottom: 2px solid red;
+    }
+}
+
+.p-loc{
+    color: white;
+    font-family: cursive;
+    margin-top: 20px;
+}
+
+
+
+.aside-loc{
+    margin-top: 20px;
+    padding: 10px;
+    height: 30%vh;
+    grid-area: aside;
+    display: grid;  
+}
+
+@media(min-width: 700px){
+
+    .container-loc{
+        grid-template-columns: 1fr;
+    }
+    
+    .header-loc{
+        justify-content: center;
+        letter-spacing: 25px;
+        color: white;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .nav-loc{
+        letter-spacing: 5px;
+        background-color: white;
+        border: 3px solid black;
+        color: black;
+        
+    }
+    
+    .nav-loc:hover{
+        background-color: black;
+        color: white;
+    }
+    
+    .section-loc{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .aside-loc{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .p-loc{
+        padding: 20px;
+        color: white;
+        letter-spacing: 8px;
+        font-size: 30px;
+    }
+}

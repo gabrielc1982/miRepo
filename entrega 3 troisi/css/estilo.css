@@ -1,0 +1,492 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-plan {
+  background-color: grey;
+  background-image: linear-gradient(rgba(214, 195, 214, 0.7), rgba(206, 185, 206, 0.7)), url(https://img.freepik.com/foto-gratis/mancuernas-sobre-fondo-multicolor_23-2147735032.jpg);
+  height: 100% vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15% vh 15% vh 50% vh 20% vh;
+  grid-template-areas: "nav" "header" "section" "footer";
+}
+.container-plan .nav-plan {
+  grid-area: nav;
+  padding: 5px;
+}
+.container-plan .nav-plan .nav-link:hover {
+  color: red;
+  border-bottom: 2px solid red;
+}
+.container-plan .header-plan {
+  display: grid;
+  justify-content: center;
+  grid-area: header;
+  font-family: cursive;
+}
+.container-plan .section-plan {
+  grid-area: section;
+}
+.container-plan .section-plan .card {
+  margin: 5px;
+  padding: 15px;
+}
+.container-plan .footer-plan {
+  grid-area: footer;
+  padding: 10px;
+  margin: 10px;
+  text-transform: uppercase;
+  background-color: grey;
+  border-radius: 10px;
+  color: white;
+  font-family: cursive;
+}
+
+@media (min-width: 700px) {
+  .container-plan {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15% vh 15% vh 50% vh 20% vh;
+    grid-template-areas: "nav nav" "header header" "section section" "footer footer";
+  }
+  .card1 {
+    width: 50%;
+    grid-template-columns: 1fr 1fr;
+  }
+  .header-plan {
+    letter-spacing: 10px;
+  }
+}
+.body-home {
+  background-color: grey;
+}
+
+.container-home {
+  background-color: grey;
+  background-image: linear-gradient(rgba(214, 195, 214, 0.7), rgba(206, 185, 206, 0.7)), url(https://i.pinimg.com/236x/db/5c/e5/db5ce520d0bc67ce2630376e7d88a5f5.jpg);
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 50px 1fr 1fr;
+  grid-template-areas: "navegacion-h" "section1-h" "section2-h" "aside-h" "footer-h";
+}
+
+.header-home img {
+  width: 100px;
+  height: 100px;
+  display: grid;
+}
+
+.nav-home {
+  grid-area: navegacion-h;
+  padding: 20px;
+}
+.nav-home .nav-link:hover {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+.sec-home-1 {
+  grid-area: section1-h;
+  pad: 20px;
+  margin: 20px;
+}
+
+#carouselExample img {
+  height: 255px;
+}
+
+.sec-home-2 {
+  margin: 20px;
+  padding: 20px;
+  grid-area: section2-h;
+  font-family: cursive;
+  color: black;
+}
+
+.aside-home {
+  grid-area: aside-h;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  padding-left: 100px;
+  display: grid;
+  gap: 30px 30px;
+}
+
+.footer-home {
+  color: black;
+  grid-area: footer-h;
+  padding: 20px;
+  margin: 20px;
+  display: grid;
+  text-transform: uppercase;
+  justify-items: center;
+}
+
+.top-h {
+  display: grid;
+  text-decoration: none;
+  border-bottom: 3px solid black;
+  border-radius: 10px;
+  justify-content: space-evenly;
+  background-color: white;
+  color: black;
+}
+
+.top-h:hover {
+  background-color: black;
+  border-bottom: 3px solid red;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .conteiner-home {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "header-h header-h" "navegacion-h navegacion-h" "section1-h section2-h" "aside-h aside-h" "footer-h foter-h";
+  }
+  .header-home {
+    color: black;
+    border: 10px solid orangered;
+    padding: 30px;
+    margin: 30px;
+    justify-content: space-between;
+  }
+  .aside-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+    gap: 30px 30px;
+  }
+}
+@media (min-width: 1000px) {
+  .aside-home {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.container-clases {
+  padding: 5px;
+  height: 100% vh;
+  background-color: blue;
+  background-image: linear-gradient(rgba(27, 12, 92, 0.342), rgba(13, 20, 85, 0.459)), url(https://thumbs.dreamstime.com/b/gimnasio-24699087.jpg);
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "nav" "header" "section" "footer";
+}
+
+.header-clases {
+  display: grid;
+  grid-area: header;
+  justify-content: center;
+  padding-top: 10px;
+  font-family: cursive;
+}
+.header-clases .titulo1 {
+  border-bottom: 2px solid white;
+  color: white;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.nav-clases {
+  grid-area: nav;
+}
+
+.section-clases {
+  display: grid;
+  justify-content: center;
+  grid-area: section;
+}
+.section-clases .card {
+  margin: 5px;
+  padding: 15px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.footer-clases {
+  grid-area: footer;
+  display: grid;
+  justify-content: center;
+}
+
+.video-clases {
+  display: grid;
+  justify-content: center;
+  padding: 10px;
+  width: 10pxpx;
+}
+
+table, th, td {
+  border: 1px transparent;
+  color: transparent;
+  margin: 3px;
+}
+
+table, td {
+  text-transform: lowercase;
+}
+
+@media (min-width: 700px) {
+  .section-clases {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+  table, th, td {
+    border: 3px solid black;
+    color: black;
+    margin: 3px;
+    padding: 5px;
+  }
+  .section-clases {
+    height: 1800px;
+  }
+  table {
+    background-color: white;
+  }
+}
+@media (min-width: 1100px) {
+  .section-clases {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .section-clases {
+    height: 1200px;
+  }
+  .header-clases {
+    letter-spacing: 5px;
+  }
+  .video-clases {
+    display: flex;
+    flex-direction: row;
+  }
+  .video1-clases {
+    padding: 20px;
+  }
+  .video2-clases {
+    padding: 20px;
+  }
+}
+.container-loc {
+  background-color: grey;
+  background-image: linear-gradient(rgba(80, 77, 80, 0.7), rgba(107, 97, 107, 0.7)), url(https://png.pngtree.com/thumb_back/fw800/background/20220425/pngtree-city-map-city-center-location-navigation-image_1079360.jpg);
+}
+
+.container-loc {
+  padding: 10px;
+  height: 100% vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% vh 20% vh 30% vh 30% vh;
+  grid-template-areas: "nav" "header" "section" "aside";
+}
+
+.header-loc {
+  margin: 10px;
+  background-color: lightgray;
+  height: 20% vh;
+  font-family: cursive;
+  border: 1px solid black;
+  border-radius: 35px;
+  grid-area: header;
+  display: grid;
+  justify-content: center;
+  color: orangered;
+}
+
+.section-loc {
+  margin-top: 10px;
+  padding: 10px;
+  height: 30% vh;
+  grid-area: section;
+  display: grid;
+}
+
+.nav-loc .nav-link:hover {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+.p-loc {
+  color: white;
+  font-family: cursive;
+  margin-top: 20px;
+}
+
+.aside-loc {
+  margin-top: 20px;
+  padding: 10px;
+  height: 30% vh;
+  grid-area: aside;
+  display: grid;
+}
+
+@media (min-width: 700px) {
+  .container-loc {
+    grid-template-columns: 1fr;
+  }
+  .header-loc {
+    justify-content: center;
+    letter-spacing: 25px;
+    color: white;
+    background-color: transparent;
+    border: none;
+  }
+  .nav-loc {
+    letter-spacing: 5px;
+    background-color: white;
+    border: 3px solid black;
+    color: black;
+  }
+  .nav-loc:hover {
+    background-color: black;
+    color: white;
+  }
+  .section-loc {
+    grid-template-columns: 1fr 1fr;
+  }
+  .aside-loc {
+    grid-template-columns: 1fr 1fr;
+  }
+  .p-loc {
+    padding: 20px;
+    color: white;
+    letter-spacing: 8px;
+    font-size: 30px;
+  }
+}
+.container-dietas {
+  padding: 3px;
+  background-color: purple;
+  background-image: linear-gradient(rgba(128, 0, 128, 0.7), rgba(238, 130, 238, 0.7)), url(https://img.pikbest.com/origin/09/14/50/57ZpIkbEsTwnm.jpg!w700wp);
+  height: 100% vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% vh 10% vh 50% vh 20% vh;
+  grid-area: "nav" "header" "section" "footer";
+}
+
+.card {
+  margin: 30px;
+}
+
+.header-dietas {
+  display: grid;
+  justify-content: center;
+  grid-area: header;
+  background-color: rgb(243, 38, 38);
+  border-radius: 20px;
+  letter-spacing: 10px;
+  font-family: cursive;
+  margin: 20px;
+  color: white;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  color: black;
+}
+
+.nav-link:hover {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+.enlace-dietas {
+  margin: 2px;
+  padding: 5px;
+  text-decoration: none;
+  color: orangered;
+  border: 3px solid black;
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
+  justify-items: center;
+  font-size: 25px;
+  font-family: fantasy;
+}
+
+.enlace-dietas:hover {
+  background-color: red;
+  border: 3px solid white;
+  color: white;
+}
+
+.section-dietas {
+  margin: 5px;
+  grid-area: section;
+  display: grid;
+  justify-content: center;
+}
+
+.footer-dietas {
+  margin: 50px;
+  grid-area: footer;
+  color: black;
+  display: grid;
+  font-family: cursive;
+  font-size: 20px;
+  justify-content: center;
+  letter-spacing: 1px;
+}
+
+.img-wapp {
+  height: 30px;
+  width: 30px;
+}
+
+.img-dietas {
+  height: 190px;
+}
+
+@media (min-width: 600px) {
+  .container-clases {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% vh 10% vh 50% vh 20% vh;
+    grid-template-areas: "header header" "nav nav" "section section" "footer footer";
+  }
+  .header-dietas {
+    background-color: red;
+    letter-spacing: 20px;
+    width: 330px;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-dietas {
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-dietas {
+    grid-template-columns: 1fr 1fr;
+  }
+  .img-wapp {
+    height: 35px;
+    width: 35px;
+  }
+}
+@media (min-width: 800px) {
+  .container-clases {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20% vh 10% vh 50% vh 20% vh;
+    grid-template-areas: "header header" "nav nav" "section section" "footer footer";
+  }
+  .header-dietas {
+    background-color: violet;
+    letter-spacing: 25px;
+    width: 430px;
+  }
+  .nav-dietas {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .section-dietas {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer-dietas {
+    display: grid;
+    justify-content: center;
+    letter-spacing: 10px;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

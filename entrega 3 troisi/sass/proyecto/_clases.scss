@@ -1,0 +1,124 @@
+.container-clases{
+    padding: 5px;
+    height: 100%vh;
+    background-color: blue;
+    background-image: linear-gradient(rgba(27, 12, 92, 0.342), rgba(13, 20, 85, 0.459)), url(https://thumbs.dreamstime.com/b/gimnasio-24699087.jpg);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "section"
+    "footer";
+}
+
+
+.header-clases{
+    
+    display: grid;
+    grid-area: header;
+    justify-content: center;
+    padding-top: 10px;
+    font-family: cursive;
+    
+    .titulo1{
+        border-bottom: 2px solid white;
+        color: white;
+        background-color: transparent;
+        text-transform: uppercase;
+        
+    }
+}
+
+.nav-clases{
+    grid-area: nav;
+}
+
+.section-clases{
+    display: grid;
+    justify-content: center;
+    grid-area: section;
+    .card{
+        margin: 5px;
+        padding: 15px;
+    }   
+}
+.card:hover {
+    transform: scale(1.1);}
+
+
+.footer-clases{
+    grid-area: footer;
+    display: grid;
+    justify-content: center;
+}
+
+.video-clases{
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+    width: 10pxpx;
+}
+
+table, th, td{
+    border: 1px transparent;
+    color: transparent;
+    margin: 3px;
+}
+
+table, td{
+    text-transform: lowercase;
+}
+
+@media(min-width:700px){
+    .section-clases{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    table, th, td{
+        border: 3px solid black;
+        color: black;
+        margin: 3px;
+        padding: 5px;
+    }
+
+    .section-clases{
+        height: 1800px;
+    }
+
+    table{
+        background-color: white;
+    }
+    
+
+}
+
+@media(min-width:1100px){
+    .section-clases{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .section-clases{
+        height: 1200px;
+    }
+
+    .header-clases{
+        letter-spacing: 5px;
+    }
+
+    .video-clases{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .video1-clases{
+        padding: 20px;
+    }
+    .video2-clases{
+        padding: 20px;
+    }
+
+
+
+}

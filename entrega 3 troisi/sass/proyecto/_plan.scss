@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-plan {
+    background-color: grey;
+    background-image: linear-gradient(rgba(214, 195, 214, 0.7), rgba(206, 185, 206, 0.7)), url(https://img.freepik.com/foto-gratis/mancuernas-sobre-fondo-multicolor_23-2147735032.jpg);
+    height: 100%vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15%vh 15%vh 50%vh 20%vh;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "section"
+    "footer";
+
+    .nav-plan {
+        grid-area: nav;
+        padding: 5px;
+        .nav-link:hover{
+            color: red;
+            border-bottom: 2px solid red;
+        }
+        
+    }
+    .header-plan{
+        display: grid;
+        justify-content: center;
+        grid-area: header;
+        font-family: cursive;
+    }
+    .section-plan{
+        grid-area: section;
+        .card{
+            margin: 5px;
+            padding: 15px;
+        }
+    }
+    .footer-plan{
+        grid-area: footer;
+        padding: 10px;
+        margin: 10px;
+        text-transform: uppercase;
+        background-color: grey;
+        border-radius: 10px;
+        color: white;
+        font-family: cursive;
+    }
+}
+@media(min-width: 700px){
+
+    .container-plan{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15%vh 15%vh 50%vh 20%vh;
+    grid-template-areas:
+    "nav nav"
+    "header header"
+    "section section"
+    "footer footer";
+    }
+    .card1{
+        width: 50%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .header-plan{
+        letter-spacing: 10px;
+    }
+
+
+}
+

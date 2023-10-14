@@ -1,0 +1,166 @@
+.container-dietas{
+    padding: 3px;
+    background-color: purple;
+    background-image: linear-gradient(rgba(128, 0, 128, 0.7), rgba(238, 130, 238, 0.7)), url(https://img.pikbest.com/origin/09/14/50/57ZpIkbEsTwnm.jpg!w700wp);
+    height: 100%vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20%vh 10%vh 50%vh 20%vh;
+    grid-area:
+    "nav"
+    "header"
+    "section"
+    "footer";
+}
+
+.card{
+    margin: 30px;
+    }
+
+
+
+
+.header-dietas{
+    
+    display: grid;
+    justify-content: center;
+    grid-area: header;
+    background-color: rgb(243, 38, 38);
+    border-radius: 20px;
+    letter-spacing: 10px;
+    font-family: cursive;
+    margin: 20px;
+    color: white;
+    
+}
+
+
+.nav-link{
+    text-transform: uppercase;
+    color: black;   
+}
+
+.nav-link:hover{
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+
+
+.enlace-dietas{
+    margin: 2px;
+    padding: 5px;
+    text-decoration: none;
+    color: orangered;
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    justify-items: center;
+    font-size: 25px;
+    font-family: fantasy;
+    
+}
+
+.enlace-dietas:hover{
+    background-color: red;
+    border: 3px solid white;
+    color: white;
+}
+
+.section-dietas{
+    margin: 5px;
+    grid-area: section;
+    display: grid;
+    justify-content: center;
+    
+    
+}
+
+.footer-dietas{
+    margin: 50px;
+    grid-area: footer;
+    color: black;
+    display: grid;
+    font-family: cursive;
+    font-size: 20px;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+
+.img-wapp{
+    height: 30px;
+    width: 30px;
+}
+
+.img-dietas{
+    height: 190px;
+}
+
+@media(min-width: 600px){
+    .container-clases{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20%vh 10%vh 50%vh 20%vh;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "section section"
+    "footer footer";
+    }
+
+    .header-dietas{
+        background-color: red;
+        letter-spacing: 20px;
+        width: 330px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-dietas{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section-dietas{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .img-wapp{
+        height: 35px;
+        width: 35px;
+    }
+
+}
+
+@media(min-width: 800px){
+    .container-clases{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20%vh 10%vh 50%vh 20%vh;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "section section"
+    "footer footer";
+    }
+
+    .header-dietas{
+        background-color: violet;
+        letter-spacing: 25px;
+        width: 430px;
+    }
+
+    .nav-dietas{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .section-dietas{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer-dietas{
+        display: grid;
+        justify-content: center;
+        letter-spacing: 10px;
+    }
+
+
+}
