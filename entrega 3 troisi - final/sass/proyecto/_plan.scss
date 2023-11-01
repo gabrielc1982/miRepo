@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body-planes{
+    background-color: grey;
+    background-image: linear-gradient(rgba(214, 195, 214, 0.7), rgba(206, 185, 206, 0.7)), url(https://img.freepik.com/foto-gratis/mancuernas-sobre-fondo-multicolor_23-2147735032.jpg);
+
+}
+.container-plan {
+    height: 100%vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15%vh 15%vh 25%vh 25%vh 20%vh;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "section"
+    "aside"
+    "footer";
+
+    .nav-plan {
+        grid-area: nav;
+        padding: 5px;
+        .nav-link:hover{
+            color: red;
+            border-bottom: 2px solid red;
+        }
+        
+    }
+    .header-plan{
+        display: grid;
+        justify-content: center;
+        grid-area: header;
+        font-family: cursive;
+        text-decoration-line: underline;
+    }
+    .section-plan{
+        grid-area: section;
+        display: grid;
+        justify-content: left;
+        margin-left: 20px;
+        .card{
+            margin: 40px;
+            padding: 15px;
+        }
+    }
+    .aside-plan{
+        grid-area: aside;
+    }
+
+    
+    
+
+    .footer-plan{
+        grid-area: footer;
+        padding: 10px;
+        margin: 10px;
+        text-transform: uppercase;
+        background-color: grey;
+        border-radius: 10px;
+        color: white;
+        font-family: cursive;
+    }
+}
+@media(min-width: 700px){
+
+    .container-plan{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15%vh 15%vh 50%vh 20%vh;
+    grid-template-areas:
+    "nav nav"
+    "header header"
+    "section aside"
+    "footer footer";
+    }
+    
+    .header-plan{
+        letter-spacing: 10px;
+    }
+
+    .section-plan{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .aside-iframe{
+        width: 300px;
+        height: 300px;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 80px;
+        border: 5px solid white;
+    }
+
+
+}
+

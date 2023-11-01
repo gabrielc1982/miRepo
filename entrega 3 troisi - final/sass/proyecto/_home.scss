@@ -1,0 +1,129 @@
+
+.body-home{
+    background-color: grey;
+    background-image: linear-gradient(rgba(214, 195, 214, 0.7), rgba(206, 185, 206, 0.7)), url(https://i.pinimg.com/236x/db/5c/e5/db5ce520d0bc67ce2630376e7d88a5f5.jpg);
+}
+.container-home{
+    grid-template-columns: 1fr;
+    grid-template-rows:  1fr 1fr 50px 1fr 1fr;
+    grid-template-areas:
+        "navegacion-h"
+        "section1-h"
+        "section2-h"
+        "aside-h"
+        "footer-h"
+}
+
+
+.header-home img{
+    width: 100px;
+    height: 100px;
+    display: grid;
+}
+
+
+
+.nav-home{
+    grid-area: navegacion-h;
+    padding: 20px;
+    .nav-link:hover{
+        color: red;
+        border-bottom: 2px solid red;
+    }
+}
+
+.sec-home-1{
+    grid-area: section1-h;
+    pad: 20px;
+    margin: 20px;
+}
+#carouselExample img{
+    height: 255px;
+}
+
+.sec-home-2{
+    margin: 20px;
+    padding: 20px;
+    grid-area: section2-h;
+    font-family: cursive;
+    color: $color-fuente;
+}
+
+.aside-home{
+    grid-area: aside-h;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 40px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 30px;
+    
+}
+
+
+
+
+.footer-home{
+    color: $color-fuente;
+    grid-area: footer-h;
+    padding: 20px;
+    margin: 20px;
+    display: grid;
+    text-transform: uppercase;
+    justify-items: center;
+}
+
+
+.top-h{
+    display: grid;
+    text-decoration: none;
+    border-bottom: 3px solid black;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    background-color: white;
+    color: black;
+}
+
+.top-h:hover{
+    background-color: black;
+    border-bottom:  3px  solid red;
+    color: white;
+}
+
+@media(min-width: 600px){
+    .conteiner-home{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "header-h header-h"
+        "navegacion-h navegacion-h"
+        "section1-h section2-h"
+        "aside-h aside-h"
+        "footer-h foter-h"
+    }
+
+
+.header-home{
+    color: $color-fuente;
+    border: 10px solid orangered;
+    padding: 30px;
+    margin: 30px;
+    justify-content: space-between;
+}
+
+.aside-home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+    gap: 30px 30px;
+}
+}
+@media(min-width: 700px){
+    .aside-home{
+        grid-template-columns: 1fr 1fr;
+    }
+    .sec-home-1{
+        width: 1000px;
+    }
+}

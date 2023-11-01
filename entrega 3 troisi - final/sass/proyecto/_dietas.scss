@@ -1,0 +1,227 @@
+.body-dietas{
+    background-color: purple;
+    background-image: linear-gradient(rgba(128, 0, 128, 0.7), rgba(238, 130, 238, 0.7)), url(https://img.pikbest.com/origin/09/14/50/57ZpIkbEsTwnm.jpg!w700wp);
+
+}
+
+.container-dietas{
+    height: 100%vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20%vh 10%vh 50%vh 20%vh;
+    grid-area:
+    "nav"
+    "header"
+    "section"
+    "footer";
+}
+
+.card{
+    margin: 30px;
+    }
+
+
+
+
+.header-dietas{
+    
+    display: grid;
+    justify-content: center;
+    grid-area: header;
+    background-color: rgb(243, 38, 38);
+    border-radius: 20px;
+    letter-spacing: 10px;
+    font-family: cursive;
+    margin: 20px;
+    color: $titulos-color;
+    
+}
+
+
+.nav-link{
+    text-transform: uppercase;
+    color: $color-fuente;   
+}
+
+.nav-link:hover{
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.section-dietas{
+    .dietas-card{
+        margin: 20px;
+    }
+}
+.dietas-card:hover {
+    transform: scale(1.1);}
+
+.dietas-card{
+    border-bottom: 6px solid black;
+    border-left: 6px solid black;
+    border-radius: 10px;
+    height: 450px;
+    width: 250px;
+    display: grid;
+    background-color: $cards-color;
+    p{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: cursive;
+    }
+    a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: cursive;
+    margin-bottom: 30px;
+    }
+    a:hover{
+        font-size: 20px;
+        color: $color-fuente;
+    }
+}
+
+.img-card{
+    border-radius: 10px;
+    width: 200px;
+    height: 160px;
+    display: grid;
+    border: 5px solid black;
+    margin-left: 18px;
+}
+.titulo-card{
+    text-transform: uppercase;
+    border-radius: 30px;
+    border-bottom: 4px solid black;
+    margin: 20px;
+    background-color: lightgrey;
+    font-size: 18px;
+    font-family: cursive;
+    letter-spacing: 5px;
+}
+ 
+
+
+.enlace-dietas{
+    margin: 2px;
+    padding: 5px;
+    text-decoration: none;
+    color: orangered;
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    justify-items: center;
+    font-size: 25px;
+    font-family: fantasy;
+    
+}
+
+.enlace-dietas:hover{
+    background-color: red;
+    border: 3px solid white;
+    color: white;
+}
+
+.section-dietas{
+    margin: 5px;
+    grid-area: section;
+    display: grid;
+    justify-content: center;
+    
+    
+}
+
+.footer-dietas{
+    border-top: 1px solid black;
+    background-color: white;
+    grid-area: footer;
+    color: $color-fuente;
+    display: grid;
+    
+    font-size: 20px;
+    justify-content: center;
+    letter-spacing: 1px;
+    &:nth-child(1n + 1){
+        font-family: cursive;
+        
+    }
+
+}
+
+
+.img-dietas{
+    height: 190px;
+}
+
+@media(min-width: 600px){
+    .container-dietas{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20%vh 10%vh 50%vh 20%vh;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "section section"
+    "footer footer";
+    }
+
+    .header-dietas{
+        background-color: red;
+        letter-spacing: 20px;
+        width: 330px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-dietas{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section-dietas{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .img-wapp{
+        height: 35px;
+        width: 35px;
+    }
+
+}
+
+@media(min-width: 800px){
+    .container-dietas{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20%vh 10%vh 50%vh 20%vh;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "section section"
+    "footer footer";
+    }
+
+    .header-dietas{
+        background-color: red;
+        letter-spacing: 25px;
+        width: 430px;
+    }
+
+    .nav-dietas{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .section-dietas{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer-dietas{
+        display: grid;
+        justify-content: center;
+        letter-spacing: 5px;
+    }
+
+
+}
